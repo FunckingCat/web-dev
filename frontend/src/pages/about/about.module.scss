@@ -1,0 +1,61 @@
+.about {
+  display: flex;
+  justify-content: center;
+
+  padding: var(--indent-size-l) 0;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+
+  padding-bottom: 20px;
+
+  font-weight: 700;
+}
+
+.subcont {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: flex-start;
+
+  padding-bottom: 35px;
+
+  &_personal {
+    justify-content: center;
+
+    padding-bottom: 10px;
+  }
+}
+
+.person__img {
+  max-width: 150px;
+  max-height: 150px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.aboutTitle {
+  display: flex;
+  justify-content: center;
+
+  padding: 30px 0 20px;
+
+  font-weight: 700;
+}
+
+.aboutHistory {
+  display: flex;
+  justify-content: center;
+
+  max-width: 1030px;
+  margin: auto;
+  padding-bottom: 35px;
+}

@@ -1,0 +1,20 @@
+.advantages {
+  display: flex;
+  justify-content: center;
+
+  height: 800px;
+  padding: var(--indent-size-s) 0;
+
+  background: url("assets/prada.jpg") no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+
+.text {
+  display: inline-block;
+
+  max-width: 1000px;
+  margin: 0 var(--indent-size-m);
+
+  text-align: center;
+}

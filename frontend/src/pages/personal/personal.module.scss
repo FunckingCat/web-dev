@@ -1,0 +1,53 @@
+.personal {
+  display: flex;
+  justify-content: center;
+
+  padding: var(--indent-size-l) 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  font-weight: 700;
+}
+
+.subcont {
+  display: grid;
+  grid-template-areas:
+    "airforce blackFriday adidas"
+    "airforce boots boots";
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.airforceImg {
+  grid-area: airforce;
+}
+
+.blackFridayImg {
+  grid-area: blackFriday;
+}
+
+.adidasImg {
+  grid-area: adidas;
+}
+
+.bootsImg {
+  grid-area: boots;
+}
+
+@media (max-width: 1200px) {
+  .subcont {
+    grid-template-areas:
+      "airforce blackFriday"
+      "airforce adidas"
+      "boots boots";
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+  }
+}

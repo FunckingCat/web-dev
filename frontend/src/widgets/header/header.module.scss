@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  padding: var(--indent-size-s) 0;
+
+  background: var(--secondary-color);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: var(--indent-size-m);
+}

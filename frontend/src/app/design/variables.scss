@@ -1,0 +1,44 @@
+#root {
+  --white-color: #fff;
+  --black-color: #000;
+  --purple-color: #8b32fd;
+  --dark-purple-color: #6500ca;
+  --silver-color: #f3f3f3;
+  --gray-color: #e5e5e5;
+  --yellow-color: #ffd600;
+
+  // отступы
+  --indent-size-xs: 0.5rem;
+  --indent-size-s: 1rem;
+  --indent-size-m: 2rem;
+  --indent-size-l: 3rem;
+  --indent-size-xl: 4rem;
+  --indent-size-xxl: 5rem;
+  --indent-size-xxxl: 6rem;
+
+  // размеры шрифта
+  --font-xs: 0.75rem;
+  --font-s: 1rem;
+  --font-m: 1.25rem;
+  --font-l: 1.5rem;
+  --font-xl: 1.75rem;
+  --font-xxl: 2rem;
+
+  // закругления
+  --round-xs: 0.25rem;
+  --round-s: 0.5rem;
+  --round-m: 0.75rem;
+  --round-l: 1rem;
+  --round-xl: 1.5rem;
+  --round-xxl: 2rem;
+}
+
+#root[data-theme="light"] {
+  --primary-color: var(--white-color);
+  --secondary-color: var(--black-color);
+}
+
+#root[data-theme="dark"] {
+  --primary-color: var(--black-color);
+  --secondary-color: var(--white-color);
+}

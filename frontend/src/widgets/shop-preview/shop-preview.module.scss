@@ -1,0 +1,24 @@
+.shopPreview {
+  display: flex;
+  justify-content: center;
+
+  background: var(--silver-color);
+}
+
+.content {
+  display: flex;
+
+  padding: var(--indent-size-xxxl) 0;
+}
+
+.title {
+  margin-bottom: var(--indent-size-s);
+}
+
+.desc {
+  margin-bottom: var(--indent-size-m);
+}
+
+.img {
+  width: 50%;
+}

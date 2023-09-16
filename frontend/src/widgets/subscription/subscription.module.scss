@@ -1,0 +1,53 @@
+.subscription {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "form prices";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: var(--indent-size-s);
+
+  align-content: center;
+
+  padding: var(--indent-size-l) 0 var(--indent-size-xxl);
+}
+
+.title {
+  margin-bottom: var(--indent-size-xl);
+
+  text-align: center;
+  grid-area: title;
+}
+
+.form {
+  grid-area: form;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--indent-size-m);
+}
+
+.prices {
+  grid-area: prices;
+  justify-self: center;
+
+  & > *:nth-child(2n) {
+    margin-bottom: var(--indent-size-s);
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-areas:
+      "title"
+      "form"
+      "prices";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+}

@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  gap: var(--indent-size-m);
+}
+
+.link {
+  color: var(--primary-color);
+
+  font-size: var(--font-m);
+}

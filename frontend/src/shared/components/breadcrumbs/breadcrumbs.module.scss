@@ -1,0 +1,17 @@
+.crumbs {
+  width: 80%;
+  max-width: 1440px;
+  margin: 30px auto;
+}
+
+.crumb {
+  display: inline-block;
+
+  margin-right: 10px;
+
+  &:not(:last-child)::after {
+    margin-left: 10px;
+
+    content: "/";
+  }
+}

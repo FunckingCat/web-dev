@@ -1,0 +1,33 @@
+.afterBeforePreview {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+
+  padding: var(--indent-size-xxxl) 0 var(--indent-size-xl);
+}
+
+.info {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: var(--indent-size-s);
+
+  text-align: end;
+}
+
+.desc {
+  margin-bottom: var(--indent-size-m);
+
+  text-align: end;
+}
+
+.img {
+  width: 50%;
+}

@@ -1,0 +1,12 @@
+.beforeAfter {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: var(--indent-size-xxxl) 0;
+}

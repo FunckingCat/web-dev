@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  padding: 25px 80px;
+
+  background-color: #000;
+}
+
+.wrapper {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.cont {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.number {
+  margin: 0 63px;
+
+  color: #FFF;
+}
+
+.mail {
+  color: #FFF;
+}
+
+.cpr {
+  color: #FFF;
+}

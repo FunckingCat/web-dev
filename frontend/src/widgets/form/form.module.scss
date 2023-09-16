@@ -1,0 +1,25 @@
+.form {
+  gap: var(--indent-size-s);
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: var(--round-xxl);
+}
+
+.filled {
+  padding: var(--indent-size-l) var(--indent-size-m);
+
+  background: var(--purple-color);
+}
+
+.border {
+  padding: var(--indent-size-l) var(--indent-size-m);
+
+  border: 2px solid var(--purple-color);
+  background: var(--secondary-color);
+}
+
+.input {
+  width: 100%;
+}

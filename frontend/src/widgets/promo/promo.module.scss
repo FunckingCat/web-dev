@@ -1,0 +1,22 @@
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: var(--indent-size-xxxl) 0;
+
+  background: url("assets/nike-jordan-pink.jpg") no-repeat;
+  background-position: right bottom;
+  background-size: min(80%, 970px);
+}
+
+.title {
+  margin-bottom: var(--indent-size-m);
+}
+
+.form {
+  width: 40%;
+
+  box-shadow: 9px 7px 62px rgb(0 0 0 / 43%);
+}

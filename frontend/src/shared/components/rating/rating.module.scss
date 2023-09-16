@@ -1,0 +1,19 @@
+.filled {
+  svg {
+    fill: var(--yellow-color);
+  }
+}
+
+.star {
+  background: none;
+
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.editable {
+  svg {
+    cursor: pointer;
+  }
+}
