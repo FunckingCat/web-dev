@@ -17,7 +17,7 @@ class ProductViewSet(ModelViewSet):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-
+        print('SendMain' + str(serializer.data.get("id")))
         send_email.delay('Создан продукт', f'Cоздан продукт с id {serializer.data.get("id")}')
 
         return Response({'message': 'added item'})

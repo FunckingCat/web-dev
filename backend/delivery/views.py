@@ -31,9 +31,9 @@ class DeliveryViewSet(ModelViewSet):
 
         return response
 
-    def destroy(self, request, *args, **kwargs):
-        response = super().destroy(request, *args, **kwargs)
+    # def destroy(self, request, *args, **kwargs):
+    #     response = super().destroy(request, *args, **kwargs)
 
-        send_email_deleted_delivery.delay(response.data.get("id"))
+    #     send_email_deleted_delivery.delay(response.data.get("id"))
 
-        return response
+    #     return response

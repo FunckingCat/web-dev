@@ -21,10 +21,7 @@ class ShoesViewSet(ModelViewSet):
     serializer_class = ShoesSerializer
 
     def get_permissions(self):
-        if self.request.method == 'GET':
-            return [IsAuthenticated()]
-        else:
-            return [IsAdminUser()]
+        return [IsAuthenticated()]
 
     @staticmethod
     def set_cache():
@@ -75,10 +72,7 @@ class OrderViewSet(ModelViewSet):
     serializer_class = OrderSerializer
 
     def get_permissions(self):
-        if self.request.method == 'DELETE':
-            return [IsAdminUser()]
-        else:
-            return [IsAuthenticated()]
+        return [IsAuthenticated()]
 
     def create(self, request, *args, **kwargs):
         email = request.user.email
